@@ -14,14 +14,7 @@ public class Post {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     private String link;
     private String content;
-    private Category category;
-    private String tags;
-    private VisionMode visionMode;
-
-    private boolean passBox;
-    private String password;
-    private String postName;
 }

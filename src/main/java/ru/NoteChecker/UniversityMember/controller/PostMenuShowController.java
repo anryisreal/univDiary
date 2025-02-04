@@ -1,15 +1,13 @@
 package ru.NoteChecker.UniversityMember.controller;
 
-import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-@AllArgsConstructor
-public class MainMenuC {
+public class PostMenuShowController {
 
     @GetMapping("/")
-    public String menu() {
-        return "main";
+    public String showPostMenu() {
+        return "site/index";
     }
 }
