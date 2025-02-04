@@ -26,17 +26,7 @@ public class WebSecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-                .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/test","/", "/reg", "/css/**", "/js/**", "/images/**", "/api/posts/**").permitAll()
-                        .anyRequest().authenticated()
-                )
-                .formLogin((form) -> form
-                        .loginPage("/login")
-                        .permitAll()
-                )
-                .logout((logout) -> logout.permitAll());
-
+        http.authorizeHttpRequests((requests) -> requests.anyRequest().permitAll());
         return http.build();
     }
 

@@ -4,10 +4,10 @@
 
 .u-section-1 .u-group-1 {
   --radius: 30px;
-  width: 723px;
+  width: 760px;
   min-height: 923px;
   height: auto;
-  margin: 38px auto 0 calc(((100% - 1140px) / 2)  + 170px);
+  margin: 38px auto 0 calc(((100% - 1140px) / 2)  + 205px);
 }
 
 .u-section-1 .u-container-layout-1 {

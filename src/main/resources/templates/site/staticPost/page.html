@@ -65,28 +65,9 @@
         <div class="u-container-layout u-container-layout-1">
           <div class="u-align-left u-form u-form-1">
               <div class="u-form-group u-form-message">
-                  <textarea placeholder="​" rows="30" cols="50" id="postContent" name="content" class="u-input u-input-rectangle" required></textarea>
+                  <label for="postContent">Сохраненный пост:</label>
+                  <textarea th:text="${post.content}" rows="30" cols="50" id="postContent" name="content" class="u-input u-input-rectangle" readonly></textarea>
               </div>
-          </div>
-        </div>
-      </div>
-      <div class="u-container-style u-grey-10 u-group u-group-2">
-        <div class="u-container-layout u-container-layout-2">
-          <div class="u-form u-form-2">
-            <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form-1" style="padding: 9px;">
-              <div class="u-form-checkbox u-form-group u-form-group-3">
-                <input type="checkbox" id="checkbox-cae3" name="checkbox" value="On" class="u-field-input">
-                <label for="checkbox-cae3" class="u-field-label">Флажок</label>
-              </div>
-              <div class="u-form-checkbox u-form-group u-form-group-4">
-                <input type="checkbox" id="checkbox-eaa2" name="checkbox-2" value="On" class="u-field-input">
-                <label for="checkbox-eaa2" class="u-field-label">Флажок</label>
-              </div>
-              <div class="u-form-checkbox u-form-group u-form-group-5">
-                <input type="checkbox" id="checkbox-3cb1" name="checkbox-1" value="On" class="u-field-input">
-                <label for="checkbox-3cb1" class="u-field-label">Флажок</label>
-              </div>
-            </form>
           </div>
         </div>
       </div>
